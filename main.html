@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Future Home | The Sokhom Residence</title>
-    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/YRJDRRD.jpeg">
+    <link rel="icon" type="image/x-icon" href="https://i.imgur.com/Fl49oC6.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -80,7 +80,7 @@
         <div class="container mx-auto px-4 py-2 flex justify-between items-center">
             <div class="flex items-center">
                 <button onclick="window.location.href='#'" class="focus:outline-none">
-                    <img src="https://i.imgur.com/HHXhMZL.png" alt="Logo" class="h-16 mr-2 hover:opacity-90 transition-opacity">
+                    <img src="https://i.imgur.com/Fl49oC6.png" alt="Logo" class="h-16 mr-2 hover:opacity-60 transition-opacity">
                 </button>
             </div>
             <nav class="hidden md:flex space-x-8">
@@ -466,44 +466,104 @@
     <section id="contact" class="bg-green-50 py-16">
         <div class="container mx-auto px-4 text-center">
             <h2 class="text-3xl font-bold text-gray-800 mb-4">Ready to Make the Sokhom Residence Your Home?</h2>
-            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Schedule a tour today and experience our exceptional living spaces firsthand.</p>
+            <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">Inquire more or schedule a tour today to experience our exceptional living spaces firsthand.</p>
             <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <button onclick="document.getElementById('contactPopup').classList.remove('hidden'); document.body.style.overflow = 'hidden';"
-                        class="bg-green-600 text-white px-8 py-3 rounded-lg font-medium hover:bg-green-700 transition duration-300 inline-block">
-                    <i class="fas fa-calendar-alt mr-2"></i> Book a Tour
-                </button>
-                <button onclick="document.getElementById('contactPopup').classList.remove('hidden'); document.body.style.overflow = 'hidden';"
-                        class="bg-white text-green-600 px-8 py-3 rounded-lg font-medium border border-green-600 hover:bg-green-50 transition duration-300 inline-block">
-                    <i class="fas fa-phone-alt mr-2"></i> Contact Us
-                </button>
+                <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-2">
+                    <button onclick="document.getElementById('englishContactPopup').classList.remove('hidden'); document.body.style.overflow = 'hidden';"
+                            class="bg-white text-green-600 px-8 py-3 rounded-lg font-medium border border-green-600 hover:bg-green-50 transition duration-300 inline-block">
+                        <i class="fas fa-phone-alt mr-2"></i> English
+                    </button>
+                    <button onclick="document.getElementById('khmerContactPopup').classList.remove('hidden'); document.body.style.overflow = 'hidden';"
+                            class="bg-white text-green-600 px-8 py-3 rounded-lg font-medium border border-green-600 hover:bg-green-50 transition duration-300 inline-block">
+                        <i class="fas fa-phone-alt mr-2"></i> ភាសាខ្មែរ
+                    </button>
+                    <button onclick="document.getElementById('chineseContactPopup').classList.remove('hidden'); document.body.style.overflow = 'hidden';"
+                            class="bg-white text-green-600 px-8 py-3 rounded-lg font-medium border border-green-600 hover:bg-green-50 transition duration-300 inline-block">
+                        <i class="fas fa-phone-alt mr-2"></i> 中文
+                    </button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Popup -->
-    <div id="contactPopup" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center">
+    <!-- Contact Popups -->
+    <div id="englishContactPopup" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center">
         <div class="bg-white p-8 rounded-lg max-w-md w-full">
-            <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Contact Us</h3>
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Contact Us (English)</h3>
             <div class="space-y-4">
                 <div class="flex items-center">
                     <i class="fas fa-phone-alt text-green-600 text-xl w-8"></i>
-                    <a href="tel:+85512345678" class="text-gray-700 hover:text-green-600">+855 12 345 678</a>
+                    <a href="tel:+85512866666" class="text-gray-700 hover:text-green-600">+855 12 866 666</a>
                 </div>
                 <div class="flex items-center">
                     <i class="fab fa-telegram text-blue-500 text-xl w-8"></i>
-                    <a href="https://t.me/yourtelegram" target="_blank" class="text-gray-700 hover:text-blue-500">@yourtelegram</a>
+                    <a href="https://t.me/sonyyta" target="_blank" class="text-gray-700 hover:text-blue-500">@sonyyta</a>
                 </div>
                 <div class="flex items-center">
                     <i class="fab fa-whatsapp text-green-500 text-xl w-8"></i>
-                    <a href="https://wa.me/85512345678" target="_blank" class="text-gray-700 hover:text-green-500">+855 12 345 678</a>
+                    <a href="https://wa.me/85512866666" target="_blank" class="text-gray-700 hover:text-green-500">+855 12 866 666</a>
                 </div>
                 <div class="flex items-center">
                     <i class="fas fa-envelope text-red-500 text-xl w-8"></i>
                     <a href="mailto:thesokhomresidence@gmail.com" class="text-gray-700 hover:text-red-500">thesokhomresidence@gmail.com</a>
                 </div>
             </div>
-            <button id="closePopup" class="mt-6 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+            <button onclick="closeContactPopup('englishContactPopup')" class="mt-6 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
                 Close
+            </button>
+        </div>
+    </div>
+
+    <div id="khmerContactPopup" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center">
+        <div class="bg-white p-8 rounded-lg max-w-md w-full">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">ទំនាក់ទំនង (ភាសាខ្មែរ)</h3>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <i class="fas fa-phone-alt text-green-600 text-xl w-8"></i>
+                    <a href="tel:+85598765432" class="text-gray-700 hover:text-green-600">+855 98 765 432</a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fab fa-telegram text-blue-500 text-xl w-8"></i>
+                    <a href="https://t.me/khmercontact" target="_blank" class="text-gray-700 hover:text-blue-500">@khmercontact</a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fab fa-whatsapp text-green-500 text-xl w-8"></i>
+                    <a href="https://wa.me/85598765432" target="_blank" class="text-gray-700 hover:text-green-500">+855 98 765 432</a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-envelope text-red-500 text-xl w-8"></i>
+                    <a href="mailto:thesokhomresidence@gmail.com" class="text-gray-700 hover:text-red-500">thesokhomresidence@gmail.com</a>
+                </div>
+            </div>
+            <button onclick="closeContactPopup('khmerContactPopup')" class="mt-6 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+                បិទ
+            </button>
+        </div>
+    </div>
+
+    <div id="chineseContactPopup" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden flex items-center justify-center">
+        <div class="bg-white p-8 rounded-lg max-w-md w-full">
+            <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">联系方式（中文）</h3>
+            <div class="space-y-4">
+                <div class="flex items-center">
+                    <i class="fas fa-phone-alt text-green-600 text-xl w-8"></i>
+                    <a href="tel:+85512866666" class="text-gray-700 hover:text-green-600">+855 12 866 666</a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fab fa-telegram text-blue-500 text-xl w-8"></i>
+                    <a href="https://t.me/sonyyta" target="_blank" class="text-gray-700 hover:text-blue-500">@sonyyta</a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fab fa-whatsapp text-green-500 text-xl w-8"></i>
+                    <a href="https://wa.me/85512866666" target="_blank" class="text-gray-700 hover:text-green-500">+855 12 866 666</a>
+                </div>
+                <div class="flex items-center">
+                    <i class="fas fa-envelope text-red-500 text-xl w-8"></i>
+                    <a href="mailto:thesokhomresidence@gmail.com" class="text-gray-700 hover:text-red-500">thesokhomresidence@gmail.com</a>
+                </div>
+            </div>
+            <button onclick="closeContactPopup('chineseContactPopup')" class="mt-6 w-full bg-green-600 text-white py-2 rounded-lg hover:bg-green-700 transition">
+                关闭
             </button>
         </div>
     </div>
@@ -536,7 +596,7 @@
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-phone-alt mr-2"></i>
-                            <span>(+855) 12 345 678</span>
+                            <span>(+855) 12 510 977</span>
                         </li>
                         <li class="flex items-center">
                             <i class="fas fa-envelope mr-2"></i>
@@ -685,19 +745,18 @@
         });
 
         // Contact popup functionality
-        const contactPopup = document.getElementById('contactPopup');
-        const closePopup = document.getElementById('closePopup');
-
-        closePopup.addEventListener('click', function () {
-            contactPopup.classList.add('hidden');
+        function closeContactPopup(popupId) {
+            document.getElementById(popupId).classList.add('hidden');
             document.body.style.overflow = '';
-        });
+        }
 
-        contactPopup.addEventListener('click', function (e) {
-            if (e.target === contactPopup) {
-                contactPopup.classList.add('hidden');
-                document.body.style.overflow = '';
-            }
+        // Close popups when clicking outside
+        document.querySelectorAll('[id$="ContactPopup"]').forEach(popup => {
+            popup.addEventListener('click', function(e) {
+                if (e.target === popup) {
+                    closeContactPopup(popup.id);
+                }
+            });
         });
 
         // Mobile menu links
