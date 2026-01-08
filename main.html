@@ -338,6 +338,11 @@
                 </div>
                 <div class="md:w-1/2">
                     <div class="image-gallery flex overflow-x-auto space-x-4 pb-4" style="scroll-snap-type: x mandatory;">
+                        <vid src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
+                             alt="3-Bedroom living room"
+                             class="unit-image w-80 h-64 object-cover rounded-lg shadow-md flex-shrink-0"
+                             style="scroll-snap-align: start;">
+                        <!--
                         <img src="https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80"
                              alt="3-Bedroom living room"
                              class="unit-image w-80 h-64 object-cover rounded-lg shadow-md flex-shrink-0"
@@ -350,6 +355,7 @@
                              alt="3-Bedroom bedroom"
                              class="unit-image w-80 h-64 object-cover rounded-lg shadow-md flex-shrink-0"
                              style="scroll-snap-align: start;">
+                        -->
                     </div>
                 </div>
             </div>
@@ -491,18 +497,22 @@
         <div class="bg-white p-8 rounded-lg max-w-md w-full">
             <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Contact Us (English)</h3>
             <div class="space-y-4">
+                <!--
                 <div class="flex items-center">
                     <i class="fas fa-phone-alt text-green-600 text-xl w-8"></i>
                     <a href="tel:+85512866666" class="text-gray-700 hover:text-green-600">+855 12 866 666</a>
                 </div>
+                -->
                 <div class="flex items-center">
                     <i class="fab fa-telegram text-blue-500 text-xl w-8"></i>
                     <a href="https://t.me/sonyyta" target="_blank" class="text-gray-700 hover:text-blue-500">@sonyyta</a>
                 </div>
+                <!--
                 <div class="flex items-center">
                     <i class="fab fa-whatsapp text-green-500 text-xl w-8"></i>
                     <a href="https://wa.me/85512866666" target="_blank" class="text-gray-700 hover:text-green-500">+855 12 866 666</a>
                 </div>
+                -->
                 <div class="flex items-center">
                     <i class="fas fa-envelope text-red-500 text-xl w-8"></i>
                     <a href="mailto:thesokhomresidence@gmail.com" class="text-gray-700 hover:text-red-500">thesokhomresidence@gmail.com</a>
@@ -520,15 +530,15 @@
             <div class="space-y-4">
                 <div class="flex items-center">
                     <i class="fas fa-phone-alt text-green-600 text-xl w-8"></i>
-                    <a href="tel:+85598765432" class="text-gray-700 hover:text-green-600">+855 98 765 432</a>
+                    <a href="tel:+85512510977" class="text-gray-700 hover:text-green-600">+855 12 510 977</a>
                 </div>
                 <div class="flex items-center">
                     <i class="fab fa-telegram text-blue-500 text-xl w-8"></i>
-                    <a href="https://t.me/khmercontact" target="_blank" class="text-gray-700 hover:text-blue-500">@khmercontact</a>
+                    <a href="https://t.me/+85512510977" target="_blank" class="text-gray-700 hover:text-blue-500">+855 12 510 977</a>
                 </div>
                 <div class="flex items-center">
                     <i class="fab fa-whatsapp text-green-500 text-xl w-8"></i>
-                    <a href="https://wa.me/85598765432" target="_blank" class="text-gray-700 hover:text-green-500">+855 98 765 432</a>
+                    <a href="https://wa.me/85512510977" target="_blank" class="text-gray-700 hover:text-green-500">+855 12 510 977</a>
                 </div>
                 <div class="flex items-center">
                     <i class="fas fa-envelope text-red-500 text-xl w-8"></i>
@@ -545,18 +555,22 @@
         <div class="bg-white p-8 rounded-lg max-w-md w-full">
             <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">联系方式（中文）</h3>
             <div class="space-y-4">
+                <!--
                 <div class="flex items-center">
                     <i class="fas fa-phone-alt text-green-600 text-xl w-8"></i>
                     <a href="tel:+85512866666" class="text-gray-700 hover:text-green-600">+855 12 866 666</a>
                 </div>
+                -->
                 <div class="flex items-center">
                     <i class="fab fa-telegram text-blue-500 text-xl w-8"></i>
                     <a href="https://t.me/sonyyta" target="_blank" class="text-gray-700 hover:text-blue-500">@sonyyta</a>
                 </div>
+                <!--
                 <div class="flex items-center">
                     <i class="fab fa-whatsapp text-green-500 text-xl w-8"></i>
                     <a href="https://wa.me/85512866666" target="_blank" class="text-gray-700 hover:text-green-500">+855 12 866 666</a>
                 </div>
+                -->
                 <div class="flex items-center">
                     <i class="fas fa-envelope text-red-500 text-xl w-8"></i>
                     <a href="mailto:thesokhomresidence@gmail.com" class="text-gray-700 hover:text-red-500">thesokhomresidence@gmail.com</a>
@@ -752,7 +766,7 @@
 
         // Close popups when clicking outside
         document.querySelectorAll('[id$="ContactPopup"]').forEach(popup => {
-            popup.addEventListener('click', function(e) {
+            popup.addEventListener('click', function (e) {
                 if (e.target === popup) {
                     closeContactPopup(popup.id);
                 }
